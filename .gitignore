@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Resturant/.vs
+/Resturant/BusinessLogic/bin/Debug/net7.0
+/Resturant/BusinessLogic/obj
+/Resturant/Domain/bin/Debug/net7.0
+/Resturant/Domain/obj
+/Resturant/Resturant/bin/Debug/net7.0
+/Resturant/Resturant/obj
+/Resturant/Resturant_task/AhmadQorom/Resturent-/.vs/Resturent-/v17
