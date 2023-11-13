@@ -1,4 +1,7 @@
-﻿using Domin;
+﻿using AutoMapper;
+using Contracts.Dtos.DrinksDtos;
+using Contracts.Dtos.FoodsDtos;
+using Domin;
 
 
 Console.WriteLine("Welcome in our resturant , you can see all the Drinks and the Foods we have:\n");
