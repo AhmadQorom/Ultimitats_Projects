@@ -1,41 +1,101 @@
-﻿
+﻿using AutoMapper;
+using Contracts.Dtos.DrinksDtos;
+using Contracts.Interfaces;
 using Domin;
 
 namespace BusinessLogic
 {
-    public interface IDrinkManeger
+
+    public class DrinkManeger : IDrinkService
     {
-        void AddDrink(Drink Drink);
-        void RemoveDrink(int DrinkID);
-        void UpdateDrink(Drink Drink, int DrinID);
-    }
-    public class DrinkManeger: IDrinkManeger 
-    {
-        TheMenue menue;
-        private Dictionary<int, Drink> Drinks;  // DrinkID , Drink 
+        private static List<Drink> _DrinkLists;
 
-        public DrinkManeger() 
+        private readonly IMapper _mapper;
+
+        public DrinkManeger(IMapper mapper)
         {
-            menue = new TheMenue();
-            Drinks = menue.GetDrinkList();
-        }
-        public void AddDrink(Drink Drink) 
-        {
-            Drinks.Add(menue.IDDrink++, Drink);
+            _DrinkLists = GetDrinksFirstTime();
+            _mapper = mapper;
         }
 
-        public void RemoveDrink(int DrinkID)
+        public List<DrinkDto> GetDrinks()
         {
-            Drinks.Remove(DrinkID);
+            var mapping = _mapper.Map<List<Drink>, List<DrinkDto>>(_DrinkLists);
+            return mapping;
         }
 
-        public void UpdateDrink(Drink drink,int DrinkID)
+        public void AddDrink(CreateDrinkDto inputFromUser)
         {
-            Drinks[DrinkID] = drink;
+            var mapping = _mapper.Map<CreateDrinkDto, Drink>(inputFromUser);
+            _DrinkLists.Add(mapping);
         }
 
-       
+        public void RemoveProduct(int drinkID)
+        {
+            for (int i = 0; i < _DrinkLists.Count; i++)
+            {
+                if (i == drinkID)
+                {
+                    _DrinkLists.Remove(_DrinkLists[i]);
+                    break;
+                }
+            }
+        }
+
+        public void UpdateDrink(UpdateDrinksDtos inputFromUser)
+        {
+            var mapping = _mapper.Map<UpdateDrinksDtos, Drink>(inputFromUser);
+            var resultFromDataBase = _DrinkLists.FirstOrDefault(s => s.Id == inputFromUser.Id);
+            if (resultFromDataBase == null)
+            {
+                Console.WriteLine($"This Product: {mapping.DrinkName} is not in the DataBase");
+            }
+            resultFromDataBase = mapping;
+        }
+
+        private static List<Drink> GetDrinksFirstTime()
+        {
+            var list = new List<Drink>()
+            {
+                new Drink()
+                {
+                  DrinkName = "Cola",
+                  DrinkPrice = 5.5,
+                  DrinkQuantity = 8,
+                },
+                new Drink()
+                {
+                  DrinkName = "Water",
+                  DrinkPrice = 3.0,
+                  DrinkQuantity =  9 ,
+                }
+            };
+            return list;
+        }
     }
 }
 
 
+
+
+
+
+/*    public void AddProduct(Object Drink) 
+      {
+          Drinks.Add(menue.IDDrink++, (Drink)Drink);
+      }
+  */
+
+/*
+       public void UpdateProduct(Object drink,int DrinkID)
+       {
+           Drinks[DrinkID] = (Drink)drink;
+       }
+   */
+
+/*
+ private static string[] DrinkList = { "Cola", "Water", "Juice", "Coffe", "Tea" };
+        private static double[] DrinkPrice = { 5.5, 3.0, 6.5, 8.0, 11.0 };
+        private static int[] DrinkQuantity = { 8, 9, 15, 7, 6 };
+
+ */

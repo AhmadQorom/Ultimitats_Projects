@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{459A5738-06FF-474A-A9B9-FEA3C272548F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{840E708F-FAC8-4471-96E3-6EAAD7895B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantApi", "ResturantApi\ResturantApi.csproj", "{C97C352F-35EF-494B-AE5C-C2256E6815C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{459A5738-06FF-474A-A9B9-FEA3C272548F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459A5738-06FF-474A-A9B9-FEA3C272548F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459A5738-06FF-474A-A9B9-FEA3C272548F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840E708F-FAC8-4471-96E3-6EAAD7895B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840E708F-FAC8-4471-96E3-6EAAD7895B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840E708F-FAC8-4471-96E3-6EAAD7895B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840E708F-FAC8-4471-96E3-6EAAD7895B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97C352F-35EF-494B-AE5C-C2256E6815C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97C352F-35EF-494B-AE5C-C2256E6815C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97C352F-35EF-494B-AE5C-C2256E6815C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97C352F-35EF-494B-AE5C-C2256E6815C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

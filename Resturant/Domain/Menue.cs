@@ -17,16 +17,8 @@
         private static int IdDrink = 0;
         private static int IdFood = 0;
 
-        private Dictionary<int, Drink> Drinks;  // DrinkID , Drink 
-        private Dictionary<int, Food> Foods;  // DrinkID , Food 
-
-        private static string[] DrinkList = { "Cola", "Water", "Juice", "Coffe", "Tea" };
-        private static double[] DrinkPrice = { 5.5, 3.0, 6.5, 8.0, 11.0 };
-        private static int[] DrinkQuantity = { 8, 9, 15, 7, 6 };
-
-        private static string[] FoodList = { "Pizza", "Eges", "KFC", "Shawerma", "Burger" };
-        private static double[] FoodPrice = { 25.0, 15.5, 65.0, 18.0, 30.0 };
-        private static int[] FoodQuantity = { 7, 15, 20, 17, 56 };
+        private readonly Dictionary<int, Drink> Drinks;  // DrinkID , Drink 
+        private readonly Dictionary<int, Food> Foods;  // DrinkID , Food 
 
         public int IDDrink 
         { 
@@ -40,7 +32,7 @@
         }
         public TheMenue()
         {
-            /* var drinkLists = new List<Drink>() 
+           /*  var drinkLists = new List<Drink>() 
              {
                 new Drink()
                 {
@@ -55,12 +47,14 @@
                   DrinkQuantity =  9 ,
                 }
 
-             };*/
+             };
+
             Drinks = new Dictionary<int, Drink>();   // DrinkID  , Drink
             Foods = new Dictionary<int, Food>();    // FoodID   , Food
             InsertDrinks(ref Drinks);
-            InsertFoods(ref Foods);
+            InsertFoods(ref Foods);*/
         }
+        /*
         private void InsertDrinks(ref Dictionary<int, Drink> Drinks)
         {
             for (int i = 0; i < DrinkList.Length; i++)
@@ -71,8 +65,8 @@
                 drink.DrinkQuantity = DrinkQuantity[i];
                 Drinks.Add(TheMenue.IdDrink++, drink);
             }
-        }
-        private void InsertFoods(ref Dictionary<int, Food> Foods)
+        }*/
+      /*  private void InsertFoods(ref Dictionary<int, Food> Foods)
         {
             for (int i = 0; i < FoodList.Length; i++)
             {
@@ -82,7 +76,7 @@
                 food.FoodQuantity = FoodQuantity[i];
                 Foods.Add(TheMenue.IdFood++, food);
             }
-        }
+        }*/
         public void SeeDrinkList()
         {
             for (int i = 0; i < Drinks.Count; i++)
