@@ -963,19 +963,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\ResturantApi\\ResturantApi.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\ResturantApi.csproj",
       "projectName": "ResturantApi",
-      "projectPath": "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\ResturantApi\\ResturantApi.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\ResturantApi\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\ResturantApi.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -989,11 +994,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\BusinessLogic\\BusinessLogic.csproj"
             },
-            "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\OneDrive\\سطح المكتب\\Web programming Notes\\C#\\Ultimitats_Projects\\Resturant\\Contracts\\Contracts.csproj"
+            "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -1048,7 +1053,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
