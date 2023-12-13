@@ -8,6 +8,7 @@ namespace BusinessLogic
 {
     public class FoodManeger: IFoodService
     {
+        // Food Manager
         private static List<Food> _FoodLists = new List<Food>();
         private readonly IMapper _mapper;
 
@@ -71,8 +72,10 @@ namespace BusinessLogic
             resultFromDataBase = mapping;
         }
     }
-}
 
+    
+}
+// 
 /*  public void RemoveProduct(int FoodID)
       {
           Foods.Remove(FoodID);
