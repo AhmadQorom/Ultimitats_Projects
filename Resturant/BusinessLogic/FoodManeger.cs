@@ -9,6 +9,7 @@ namespace BusinessLogic
     public class FoodManeger: IFoodService
     {
         // Food Manager
+
         private static List<Food> _FoodLists = new List<Food>();
         private readonly IMapper _mapper;
 
