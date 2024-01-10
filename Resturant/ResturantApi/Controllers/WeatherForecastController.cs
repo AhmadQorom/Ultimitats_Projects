@@ -1,5 +1,3 @@
-using Contracts.Dtos.DrinksDtos;
-using Contracts.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ResturantApi.Controllers
@@ -13,25 +11,10 @@ namespace ResturantApi.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly IDrinkService _drinkService;
-        public WeatherForecastController(IDrinkService drinkService)
+        public WeatherForecastController()
         {
-            _drinkService = drinkService;
         }
 
-        [HttpGet(Name = "GetDrink")]
-        public List<DrinkDto> GetDrink()
-        {
-            var result = _drinkService.GetDrinks();
-            return result;
-        }
-
-        [HttpPost]
-        public List<DrinkDto> CreateDrink(CreateDrinkDto inputFromUser)
-        {
-            _drinkService.AddDrink(inputFromUser);
-            return GetDrink();
-        }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()

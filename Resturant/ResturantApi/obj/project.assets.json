@@ -963,23 +963,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\ResturantApi.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\ResturantApi\\ResturantApi.csproj",
       "projectName": "ResturantApi",
-      "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\ResturantApi.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\ResturantApi\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\ResturantApi\\ResturantApi.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\ResturantApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -987,18 +992,19 @@
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\BusinessLogic\\BusinessLogic.csproj"
             },
-            "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\Projects\\rest\\Resturant\\Contracts\\Contracts.csproj"
+            "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\hp\\Source\\Repos\\Ultimitats_Projects\\Resturant\\Contracts\\Contracts.csproj"
             }
           }
         }
